@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "KxMenu.h"
 
+#import "ZXVPopupMenuView.h"
+
 @interface ViewController ()
 @end
 
@@ -109,6 +111,7 @@
     _btn7.frame = CGRectMake((W - 100)* 0.5, (H-50) * 0.5, 100, 50);
 }
 
+#if 0
 - (void)showMenu:(UIButton *)sender
 {
     NSArray *menuItems =
@@ -153,6 +156,25 @@
                   fromRect:sender.frame
                  menuItems:menuItems];
 }
+
+#else
+- (void)showMenu:(UIButton *)sender
+{
+    NSArray *menuItems =
+    @[
+      
+      [ZXVPopupItem itemWithTitle:@"过滤" iconImage:[UIImage imageNamed:@"action_icon"] callBack:^{
+          NSLog(@"selected 1 !!!");
+      }],
+      
+      [ZXVPopupItem itemWithTitle:@"遥控器" iconImage:[UIImage imageNamed:@"search_icon"] callBack:^{
+          NSLog(@"selected 2 !!!");
+      }],
+      
+      ];
+    [ZXVPopupMenuView showMenuFromRect:sender.frame menuItems:menuItems];
+}
+#endif
 
 - (void) pushMenuItem:(id)sender
 {

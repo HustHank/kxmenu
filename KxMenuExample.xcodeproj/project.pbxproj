@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84E33B9C1E9E147A00C20AD0 /* ZXVPopupMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E33B9B1E9E147A00C20AD0 /* ZXVPopupMenuView.m */; };
 		87292BA81746668300821739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87292BA71746668300821739 /* UIKit.framework */; };
 		87292BAA1746668300821739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87292BA91746668300821739 /* Foundation.framework */; };
 		87292BAC1746668300821739 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87292BAB1746668300821739 /* CoreGraphics.framework */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84E33B9A1E9E147A00C20AD0 /* ZXVPopupMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZXVPopupMenuView.h; path = KxMenuExample/ZXVPopupMenuView.h; sourceTree = "<group>"; };
+		84E33B9B1E9E147A00C20AD0 /* ZXVPopupMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZXVPopupMenuView.m; path = KxMenuExample/ZXVPopupMenuView.m; sourceTree = "<group>"; };
 		87292BA41746668300821739 /* KxMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KxMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87292BA71746668300821739 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87292BA91746668300821739 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +80,8 @@
 		87292B9B1746668300821739 = {
 			isa = PBXGroup;
 			children = (
+				84E33B9A1E9E147A00C20AD0 /* ZXVPopupMenuView.h */,
+				84E33B9B1E9E147A00C20AD0 /* ZXVPopupMenuView.m */,
 				87292BE21746670000821739 /* KxMenu */,
 				87292BAD1746668300821739 /* KxMenuExample */,
 				87292BA61746668300821739 /* Frameworks */,
@@ -232,6 +237,7 @@
 			files = (
 				87292BB41746668300821739 /* main.m in Sources */,
 				87292BB81746668300821739 /* AppDelegate.m in Sources */,
+				84E33B9C1E9E147A00C20AD0 /* ZXVPopupMenuView.m in Sources */,
 				87292BC11746668300821739 /* ViewController.m in Sources */,
 				87292BE51746670C00821739 /* KxMenu.m in Sources */,
 			);
